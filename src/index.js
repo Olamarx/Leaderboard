@@ -2,9 +2,9 @@
 import _ from 'lodash';
 import './style.css';
 import UI from './modules/UI.js';
-import GetData from './modules/AccessKey.js';
+import EventListenerClass from './modules/EventLister.js';
 
 UI.interface();
-GetData.getData();
-
-// getData();
+EventListenerClass.windowLoad();
+EventListenerClass.submitTheForm()
+EventListenerClass.refreshBTNFunc()
