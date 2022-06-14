@@ -6,5 +6,5 @@ import EventListenerClass from './modules/EventLister.js';
 
 UI.interface();
 EventListenerClass.windowLoad();
-EventListenerClass.submitTheForm()
-EventListenerClass.refreshBTNFunc()
+EventListenerClass.submitTheForm();
+EventListenerClass.refreshBTNFunc();
