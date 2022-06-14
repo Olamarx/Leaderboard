@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.header__h1 {
+  font-size: 4rem;
+  margin: 30px 40px;
+}
+
+.main-body {
+  /* border: 3px solid red; */
+  margin: 80px auto;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.main-body__recent-refresh {
+  display: flex;
+
+  /* border: 3px solid green; */
+  width: 30vw;
+  justify-content: space-between;
+}
+
+.main-body__recent {
+  font-size: 40px;
+}
+
+.main-body__refresh {
+  margin: 0.5vw;
+  width: 5vw;
+  height: auto;
+  cursor: pointer;
+}
+
+.main-body__score-board {
+  height: 50vh;
+  width: auto;
+
+  /* border: 8px solid purple; */
+}
+
+.add-score-h3 {
+  font-size: 1.6rem;
+}
+
+.main-body__input {
+  /* border: 5px solid yellow; */
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-body__name {
+  margin-top: 30px;
+}
+
+.main-body__score {
+  margin-top: 15px;
+}
+
+.main-body__button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.score-li {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px;
+}
+
+.score-li:nth-child(odd) {
+  background-color: rgb(199, 199, 199);
+}
