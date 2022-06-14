@@ -13,7 +13,21 @@ export default class EventListenerClass {
       });
     }
 
-    static refreshBTNListener = () => {
+    static refreshBTNFunc = () => {
+      const refresBtn = document.querySelector('.main-body__recent-refresh');
+      refresBtn.addEventListener('click', async () => {
+        try {
+          const UL = document.querySelector('ul');
+          UL.innerHTML = '';
+          const displayScore = await DisplayOnBoard.displayScore();
+          return displayScore;
+        } catch (error) {
+          throw new Error(error);
+        }
+      });
+    }
+
+    static submitTheForm = () => {
       const submitForm = document.querySelector('form');
       submitForm.addEventListener('submit', async (e) => {
         try {
