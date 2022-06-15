@@ -8,13 +8,13 @@ const gameObject = new Game({ name: 'Olaoluwa Owoeye\'s Game' });
 export default class Utility {
     static URLandAccessKey = () => {
       const ID = gameObject.id;
-      const endPoint = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${ID}/scores/`;
-      return endPoint;
+      const gameUrl = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${ID}/scores/`;
+      return gameUrl;
     }
 
     static createNewScoreAPI = async ({ name, score }) => {
       try {
-        const scoreandname = new ScoreAndName({ name, score });
+        const scoreandname = new ScoreAndName(name, score);
         const URL = Utility.URLandAccessKey();
         const postScores = await LeaderboardClass.postScore(scoreandname, URL);
         return postScores;
