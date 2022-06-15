@@ -22,8 +22,6 @@ export default class LeaderboardClass {
           },
         });
         const data = await fetchRequest.makeRequest();
-        console.log(fetchRequest)
-        console.log(data)
         return data;
       } catch (error) {
         throw new Error(error);
