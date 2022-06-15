@@ -54,7 +54,6 @@ export default class UI {
     inputBtn.type = 'submit';
     inputName.placeholder = 'Your name';
     inputScore.placeholder = 'Your Score';
-    // inputBtn.value = 'Submit'
 
     addScoreH3.innerHTML = 'Add your score';
 
@@ -66,47 +65,5 @@ export default class UI {
     const scoreUl = document.createElement('ul');
     scoreUl.classList.add('ul-body');
     scoreBoard.appendChild(scoreUl);
-  }
-
-  static dynamic() {
-    const dataArr = [
-      {
-        name: 'Olaoluwa Owoeye',
-        score: 150,
-      },
-      {
-        name: 'Daniel Malo',
-        score: 400,
-      },
-      {
-        name: 'Adres Agudelo',
-        score: 200,
-      },
-      {
-        name: 'Ameer Hamzat',
-        score: 300,
-      },
-      {
-        name: 'Clinton Gueniva',
-        score: 160,
-      },
-      {
-        name: 'Kolix Simp',
-        score: 90,
-      },
-      {
-        name: 'Olamarx Juwon',
-        score: 130,
-      },
-    ];
-
-    dataArr.forEach((datum, index) => {
-      const scoreLi = document.createElement('li');
-      scoreLi.classList.add('score-li');
-      index += 1;
-      scoreLi.innerHTML = `<span> ${index} </span> <span> ${datum.name} </span> <span> ${datum.score} </span>`;
-      const scoreUl = document.querySelector('.ul-body');
-      scoreUl.appendChild(scoreLi);
-    });
   }
 }
