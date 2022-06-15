@@ -22,7 +22,6 @@ body {
 }
 
 .main-body {
-  /* border: 3px solid red; */
   margin: 80px auto;
   width: fit-content;
   display: flex;
@@ -73,6 +72,10 @@ body {
 
 .main-body__score {
   margin-top: 15px;
+}
+
+.main-body__score:focus {
+  border: 1px solid black;
 }
 
 .main-body__button {

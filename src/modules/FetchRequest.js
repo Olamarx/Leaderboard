@@ -1,21 +1,21 @@
 export default class FetchRequestClass {
+  method;
+
     body;
 
-    method;
+    headers = {
+      'Content-type': 'application/json; charset=UTF-8',
+    };
 
     url;
 
-    headers = {
-      'content-Type': 'application/json',
-    };
-
     constructor({ method = 'GET', body, url = '' } = {}) {
-      this.body = body;
       this.method = method;
+      this.body = body;
       this.url = url;
     }
 
-    static makeRequest = async () => {
+    async makeRequest() {
       try {
         const options = {
           method: this.method,
@@ -23,9 +23,9 @@ export default class FetchRequestClass {
           headers: this.headers,
         };
 
-        const response = await fetch(this.url, options);
-        const responseResult = await response.json();
-        return responseResult;
+        const reponse = await fetch(this.url, options);
+        const data = await reponse.json();
+        return data;
       } catch (error) {
         throw new Error(error);
       }

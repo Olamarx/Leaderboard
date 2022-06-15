@@ -4,7 +4,7 @@ import LeaderboardClass from './Leaderboard.js';
 export default class DisplayOnBoard {
     static displayScore = async () => {
       try {
-        const sortedScore = DisplayOnBoard.sortScore();
+        const sortedScore = await DisplayOnBoard.sortScore();
         sortedScore.forEach((score, index) => {
           DisplayOnBoard.htmlforDOM(score, index + 1);
         });

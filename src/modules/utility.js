@@ -1,3 +1,4 @@
+/* eslint-disable prefer-destructuring */
 import Game from './game.js';
 import ScoreAndName from './Score.js';
 import LeaderboardClass from './Leaderboard.js';
@@ -6,8 +7,8 @@ const gameObject = new Game({ name: 'Olaoluwa Owoeye\'s Game' });
 
 export default class Utility {
     static URLandAccessKey = () => {
-      const { id } = gameObject;
-      const endPoint = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${id}/scores`;
+      const ID = gameObject.id;
+      const endPoint = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${ID}/scores/`;
       return endPoint;
     }
 
