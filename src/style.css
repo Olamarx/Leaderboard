@@ -19,7 +19,6 @@ body {
 .header__h1 {
   font-size: 4rem;
   margin: 30px 40px;
-  transition: all 0.4s ease;
 }
 
 .main-body {
@@ -31,6 +30,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  gap: 80px;
 }
 
 .main-body__recent-refresh {
@@ -45,7 +45,7 @@ body {
 }
 
 .main-body__refresh {
-  margin: 0.5vw;
+  margin: 10px 0;
   width: 5vw;
   height: auto;
   cursor: pointer;
@@ -61,11 +61,21 @@ body {
   color: white;
 }
 
-.main-body__input {
-  width: 30vw;
+.input-pack {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 180px;
+}
+
+.section-input {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.main-body__input {
+  width: 300px;
 }
 
 .main-body__name {
@@ -80,6 +90,12 @@ body {
   border: 1px solid black;
 }
 
+.btn-pack {
+  width: 178px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .main-body__button {
   margin-top: 10px;
   cursor: pointer;
@@ -88,7 +104,7 @@ body {
 .score-li {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px;
+  margin: 0 0;
 }
 
 .score-li:nth-child(odd) {
