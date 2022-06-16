@@ -26,6 +26,7 @@ export default class UI {
 
     header.insertAdjacentElement('afterend', MainBody);
     MainBody.append(sectionScoreBody);
+
     sectionScoreBody.append(divRecentAndRefre);
     divRecentAndRefre.append(recentScoreH2, refreshBtn);
 
@@ -35,6 +36,7 @@ export default class UI {
     divRecentAndRefre.insertAdjacentElement('afterend', scoreBoardDiv);
 
     const sectionInput = document.createElement('section');
+    sectionInput.classList.add('section-input');
     MainBody.append(sectionInput);
 
     const inputForm = document.createElement('form');
@@ -42,12 +44,16 @@ export default class UI {
     const inputName = document.createElement('input');
     const inputScore = document.createElement('input');
     const inputBtn = document.createElement('input');
+    const inputpack = document.createElement('div');
+    const btnpack = document.createElement('div');
 
     inputForm.classList.add('main-body__input');
     addScoreH3.classList.add('add-score-h3');
     inputName.classList.add('main-body__name');
     inputScore.classList.add('main-body__score');
     inputBtn.classList.add('main-body__button');
+    inputpack.classList.add('input-pack');
+    btnpack.classList.add('btn-pack');
 
     inputName.type = 'text';
     inputScore.type = 'number';
@@ -59,7 +65,9 @@ export default class UI {
 
     sectionInput.appendChild(inputForm);
 
-    inputForm.append(addScoreH3, inputName, inputScore, inputBtn);
+    inputpack.append(addScoreH3, inputName, inputScore);
+    btnpack.append(inputBtn);
+    inputForm.append(inputpack, btnpack);
 
     const scoreBoard = document.querySelector('.main-body__score-board');
     const scoreUl = document.createElement('ul');
