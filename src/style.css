@@ -26,22 +26,26 @@ body {
   width: fit-content;
   display: flex;
   justify-content: center;
+  background-image: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  gap: 80px;
 }
 
 .main-body__recent-refresh {
   display: flex;
-
-  /* border: 3px solid green; */
   width: 30vw;
   justify-content: space-between;
 }
 
 .main-body__recent {
   font-size: 40px;
+  color: white;
 }
 
 .main-body__refresh {
-  margin: 0.5vw;
+  margin: 10px 0;
   width: 5vw;
   height: auto;
   cursor: pointer;
@@ -50,20 +54,28 @@ body {
 .main-body__score-board {
   height: 50vh;
   width: auto;
-
-  /* border: 8px solid purple; */
 }
 
 .add-score-h3 {
   font-size: 1.6rem;
+  color: white;
 }
 
-.main-body__input {
-  /* border: 5px solid yellow; */
-  width: 30vw;
+.input-pack {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 180px;
+}
+
+.section-input {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.main-body__input {
+  width: 300px;
 }
 
 .main-body__name {
@@ -78,6 +90,12 @@ body {
   border: 1px solid black;
 }
 
+.btn-pack {
+  width: 178px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .main-body__button {
   margin-top: 10px;
   cursor: pointer;
@@ -86,9 +104,13 @@ body {
 .score-li {
   display: flex;
   justify-content: space-between;
-  margin: 0 50px;
+  margin: 0 0;
 }
 
 .score-li:nth-child(odd) {
   background-color: rgb(199, 199, 199);
+}
+
+.score-li:nth-child(even) {
+  background-color: white;
 }
