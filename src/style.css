@@ -19,6 +19,7 @@ body {
 .header__h1 {
   font-size: 4rem;
   margin: 30px 40px;
+  transition: all 0.4s ease;
 }
 
 .main-body {
@@ -26,18 +27,21 @@ body {
   width: fit-content;
   display: flex;
   justify-content: center;
+  background-image: url(https://i.pinimg.com/originals/79/a3/84/79a384c3c449ad01b0e57e790807b2c0.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .main-body__recent-refresh {
   display: flex;
-
-  /* border: 3px solid green; */
   width: 30vw;
   justify-content: space-between;
 }
 
 .main-body__recent {
   font-size: 40px;
+  color: white;
 }
 
 .main-body__refresh {
@@ -50,16 +54,14 @@ body {
 .main-body__score-board {
   height: 50vh;
   width: auto;
-
-  /* border: 8px solid purple; */
 }
 
 .add-score-h3 {
   font-size: 1.6rem;
+  color: white;
 }
 
 .main-body__input {
-  /* border: 5px solid yellow; */
   width: 30vw;
   display: flex;
   flex-direction: column;
@@ -91,4 +93,8 @@ body {
 
 .score-li:nth-child(odd) {
   background-color: rgb(199, 199, 199);
+}
+
+.score-li:nth-child(even) {
+  background-color: white;
 }
