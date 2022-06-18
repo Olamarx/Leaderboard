@@ -2,6 +2,23 @@
 
 # Leaderboard
 
+## Desktop Version of the Leaderboard
+<p align="center">
+  <img
+  src="./src/images/desktop.png"
+  alt="Desktop Version"
+  >
+</p>
+
+## Mobile Version of the site
+
+<p align="center">
+  <img 
+  src="./src/images/mobile.png"
+  alt="Mobile Version"
+  >
+</p>
+
 In this project, I am building a Leaderboard to record score with the use of POST and GET from API.
 
 ## Built With
@@ -14,7 +31,7 @@ In this project, I am building a Leaderboard to record score with the use of POS
 
 ## Live Demo
 
-[Live Demo Link(Not Available)]()
+[Live Demo Link](https://olamarx.github.io/Leaderboard/dist/)
 
 
 ## Getting Started
