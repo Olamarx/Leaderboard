@@ -7,6 +7,6 @@ export default class GetData {
      body: JSON.stringify({ name: 'Owoeye Olaoluwa\'s Leaderboard' }),
    })
      .then((response) => response.text())
-     .then((res) => console.log(res.split(' ').filter((item) => item.length === 20)));
+     .then((res) => res.split(' ').filter((item) => item.length === 20));
  };
 }
